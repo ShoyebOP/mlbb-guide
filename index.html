@@ -3,11 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Website</title>
+    <title>Mobile Legends Hero Guides</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .hero-item {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .hero-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to my website!</h1>
-    <p>This is a simple website created for GitHub Pages.</p>
+    <h1>Mobile Legends Hero Guides</h1>
+    <div class="hero-grid">
+        <!-- Hero list will be inserted here -->
+    </div>
+
+    <script>
+        const heroes = [
+            "miya", "saber", "zuxin", "hanzo", "granger", "julian", "badang", "suyu", "selena", "kalea",
+            "sun", "cici", "irithel", "vaxena", "popol&kupa", "Franco", "alucard", "moskov", "Uranus", "Lancelot",
+            "chang'e", "karina", "Clint", "fanny", "alpha", "tigreal", "lasley", "hanabi", "terizla", "Aldous",
+            "Johnson", "yin", "Layla", "ruby", "cecilion", "carmilla", "nana", "zilong", "minsither", "gord", "dyroth"
+        ];
+
+        const heroGrid = document.querySelector('.hero-grid');
+
+        heroes.forEach(hero => {
+            const heroItem = document.createElement('div');
+            heroItem.classList.add('hero-item');
+            heroItem.innerHTML = `
+                <img src="placeholder.png" alt="${hero}">
+                <p>${hero}</p>
+            `;
+            heroGrid.appendChild(heroItem);
+        });
+    </script>
+    <p>To add hero images, replace 'placeholder.png' in the script with the correct image path for each hero. Ensure the images are placed in the same directory as index.html, or update the paths accordingly.</p>
 </body>
 </html>
