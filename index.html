@@ -5,52 +5,264 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Legends Hero Guides</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .hero-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-        .hero-item {
-            text-align: center;
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
-        .hero-item img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
 <body>
-    <h1>Mobile Legends Hero Guides</h1>
-    <div class="hero-grid">
-        <!-- Hero list will be inserted here -->
-    </div>
-
-    <script>
-        const heroes = [
-            "miya", "saber", "zuxin", "hanzo", "granger", "julian", "badang", "suyu", "selena", "kalea",
-            "sun", "cici", "irithel", "vaxena", "popol&kupa", "Franco", "alucard", "moskov", "Uranus", "Lancelot",
-            "chang'e", "karina", "Clint", "fanny", "alpha", "tigreal", "lasley", "hanabi", "terizla", "Aldous",
-            "Johnson", "yin", "Layla", "ruby", "cecilion", "carmilla", "nana", "zilong", "minsither", "gord", "dyroth"
-        ];
-
-        const heroGrid = document.querySelector('.hero-grid');
-
-        heroes.forEach(hero => {
-            const heroItem = document.createElement('div');
-            heroItem.classList.add('hero-item');
-            heroItem.innerHTML = `
-                <img src="placeholder.png" alt="${hero}">
-                <p>${hero}</p>
-            `;
-            heroGrid.appendChild(heroItem);
-        });
-    </script>
-    <p>To add hero images, replace 'placeholder.png' in the script with the correct image path for each hero. Ensure the images are placed in the same directory as index.html, or update the paths accordingly.</p>
+    <header>
+        <h1>Mobile Legends Hero Guides</h1>
+    </header>
+    <main>
+        <div class="hero-grid">
+            <div class="hero-panel">
+                <a href="aldous.html">
+                    <img src="images/hereos/aldous.png" alt="Aldous">
+                    <p>Aldous</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="alpha.html">
+                    <img src="images/hereos/alpha.png" alt="Alpha">
+                    <p>Alpha</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="alucard.html">
+                    <img src="images/hereos/alucard.png" alt="Alucard">
+                    <p>Alucard</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="badang.html">
+                    <img src="images/hereos/badang.png" alt="Badang">
+                    <p>Badang</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="carmilla.html">
+                    <img src="images/hereos/carmilla.png" alt="Carmilla">
+                    <p>Carmilla</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="cecilion.html">
+                    <img src="images/hereos/cecilion.png" alt="Cecilion">
+                    <p>Cecilion</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="change.html">
+                    <img src="images/hereos/chang'e.png" alt="Change">
+                    <p>Change</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="cici.html">
+                    <img src="images/hereos/cici.png" alt="Cici">
+                    <p>Cici</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="clint.html">
+                    <img src="images/hereos/clint.png" alt="Clint">
+                    <p>Clint</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="dyroth.html">
+                    <img src="images/hereos/dyroth.png" alt="Dyroth">
+                    <p>Dyroth</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="fanny.html">
+                    <img src="images/hereos/fanny.png" alt="Fanny">
+                    <p>Fanny</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="franco.html">
+                    <img src="images/hereos/franco.png" alt="Franco">
+                    <p>Franco</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="gord.html">
+                    <img src="images/hereos/gord.png" alt="Gord">
+                    <p>Gord</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="granger.html">
+                    <img src="images/hereos/granger.png" alt="Granger">
+                    <p>Granger</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="hanabi.html">
+                    <img src="images/hereos/hanabi.png" alt="Hanabi">
+                    <p>Hanabi</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="hanzo.html">
+                    <img src="images/hereos/hanzo.png" alt="Hanzo">
+                    <p>Hanzo</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="irithel.html">
+                    <img src="images/hereos/irithel.png" alt="Irithel">
+                    <p>Irithel</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="johnson.html">
+                    <img src="images/hereos/johnson.png" alt="Johnson">
+                    <p>Johnson</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="julian.html">
+                    <img src="images/hereos/julian.png" alt="Julian">
+                    <p>Julian</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="kalea.html">
+                    <img src="images/hereos/kalea.png" alt="Kalea">
+                    <p>Kalea</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="karina.html">
+                    <img src="images/hereos/karina.png" alt="Karina">
+                    <p>Karina</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="lancelot.html">
+                    <img src="images/hereos/lancelot.png" alt="Lancelot">
+                    <p>Lancelot</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="lasley.html">
+                    <img src="images/hereos/lasley.png" alt="Lasley">
+                    <p>Lasley</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="layla.html">
+                    <img src="images/hereos/layla.png" alt="Layla">
+                    <p>Layla</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="minsither.html">
+                    <img src="images/hereos/minsither.png" alt="Minsither">
+                    <p>Minsither</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="miya.html">
+                    <img src="images/hereos/miya.png" alt="Miya">
+                    <p>Miya</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="moskov.html">
+                    <img src="images/hereos/moskov.png" alt="Moskov">
+                    <p>Moskov</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="nana.html">
+                    <img src="images/hereos/nana.png" alt="Nana">
+                    <p>Nana</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="popolkupa.html">
+                    <img src="images/hereos/popol&kupa.png" alt="Popol Kupa">
+                    <p>Popol Kupa</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="ruby.html">
+                    <img src="images/hereos/ruby.png" alt="Ruby">
+                    <p>Ruby</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="saber.html">
+                    <img src="images/hereos/saber.png" alt="Saber">
+                    <p>Saber</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="selena.html">
+                    <img src="images/hereos/selena.png" alt="Selena">
+                    <p>Selena</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="sun.html">
+                    <img src="images/hereos/sun.png" alt="Sun">
+                    <p>Sun</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="suyu.html">
+                    <img src="images/hereos/suyu.png" alt="Suyu">
+                    <p>Suyu</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="terizla.html">
+                    <img src="images/hereos/terizla.png" alt="Terizla">
+                    <p>Terizla</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="tigreal.html">
+                    <img src="images/hereos/tigreal.png" alt="Tigreal">
+                    <p>Tigreal</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="uranus.html">
+                    <img src="images/hereos/uranus.png" alt="Uranus">
+                    <p>Uranus</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="vexana.html">
+                    <img src="images/hereos/vaxena.png" alt="Vexana">
+                    <p>Vexana</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="yin.html">
+                    <img src="images/hereos/yin.png" alt="Yin">
+                    <p>Yin</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="zilong.html">
+                    <img src="images/hereos/zilong.png" alt="Zilong">
+                    <p>Zilong</p>
+                </a>
+            </div>
+            <div class="hero-panel">
+                <a href="zuxin.html">
+                    <img src="images/hereos/zuxin.png" alt="Zuxin">
+                    <p>Zuxin</p>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Made by Shoyeb Morshed</p>
+        <p>Copyright © 2025</p>
+    </footer>
 </body>
 </html>
